@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style type="text/css">
+			body {margin: 0; font-family: 'Open Sans';}
+			.is-success {background-color: green; color: black;}
+			.is-warning {background-color: #d7d7d7; color: black;}
+			.is-danger {background-color: red; color: black;}
+
+			header {display: block; background-color: #6f0801;}
+			header > div {display: table; width: 100%;}
+			header > div > * {display: table-cell; vertical-align: middle; padding: 10px;}
+			header > div > nav {float: right;}
+			header > div > nav > div {height: 56px; display: table;}
+			div.patient-info {}
+			div.patient-info > * {margin: 2px;}
+			div.patient-info h3 {font-size: 24px; color: white; letter-spacing: -.9px;}
+			div.patient-info h2 {font-weight: normal; font-size: 14px; color: white;}
+			header nav > div > a {display: table-cell; cursor: pointer; padding: 6px 10px; font-size: 14px; height: 34px; vertical-align: middle; color: white;}
+			header nav > div small {display: block;}
+			header nav > div > a.close-report {border-radius: 5px; color: #6f0801;  background-color: white; }
+
+			div.container {}
+			div.container > div {}
+			table {border-collapse: collapse; margin: 2em auto; text-align: left; width: 100%; max-width: 1080px;}
+			table th,td {border: 1px solid rgba(0,0,0,0.4); padding: 5px 10px;}
+			table thead, tfoot {background-color: #fec9b9;}
+			table th {font-weight: 500;}
+			table a {color: blue;}
+			table tfoot {}
+		</style>
+	</head>
+	<body>
+		<div>
+			<header>
+				<div>
+					<div class="patient-info">
+						<h2>Medical History for</h2>
+						<h3>Pawan Kumar Mishra</h3>
+					</div>
+					<nav>
+						<div>
+							<a class="datetime">
+								<small>Today</small>
+								Sat 19 Oct 2019
+							</a>&nbsp;
+							<a href="" class="close-report">
+								Close Report
+							</a>
+						</div>
+					</nav>
+				</div>
+			</header>
+			<div class="container">
+				<div>
+					<table>
+						<thead>
+							<th>Record Title</th>
+							<th>Date</th>
+							<th>Doctor</th>
+							<th>Hospital/Clinic</th>
+							<th>Action</th>
+						</thead>
+						<tbody>
+							<tr>
+								<td>THL Report Diabetes Diagnosis</td>
+								<td>12 Sept 2019</td>
+								<td>Rajiv Shukla</td>
+								<td>THL Hospital</td>
+								<td class="is-warning"><a href="">View Report</a></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<th>Record Title</th>
+							<th>Date</th>
+							<th>Doctor</th>
+							<th>Hospital/Clinic</th>
+							<th>Action</th>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

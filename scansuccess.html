@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title></title>
+
+    <style type="text/css">
+        body {
+            margin: 0;
+            font-family: 'Open Sans';
+        }
+        
+        .is-success {
+            background-color: green;
+            color: black;
+        }
+        
+        .is-warning {
+            background-color: #d7d7d7;
+            color: black;
+        }
+        
+        header.user-header {
+            background-color: white;
+            color: black;
+        }
+        
+        header.user-header>div {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+        
+        header.user-header>div>* {
+            display: inline-block;
+        }
+        
+        header.user-header a {
+            float: right;
+            color: black;
+            font-size: 14px;
+        }
+        
+        header .doctor-info {
+            font-weight: bold;
+        }
+        
+        .is-danger {
+            background-color: red;
+            color: black;
+        }
+        
+        header {
+            display: block;
+            background-color: #6f0801;
+        }
+        
+        .title-a {
+            font-size: 5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #6f0801;
+        }
+        
+        header>div {
+            display: table;
+            width: 100%;
+        }
+        
+        header>div>* {
+            display: table-cell;
+            vertical-align: middle;
+            padding: 10px;
+        }
+        
+        header>div>nav {
+            float: right;
+        }
+        
+        header>div>nav>div {
+            height: 56px;
+            display: table;
+        }
+        
+        div.patient-info {}
+        
+        div.patient-info>* {
+            margin: 2px;
+        }
+        
+        .text-center {
+            text-align: center;
+        }
+        
+        div.patient-info h3 {
+            font-size: 24px;
+            color: white;
+            letter-spacing: -.9px;
+        }
+        
+        div.patient-info h2 {
+            font-weight: normal;
+            font-size: 14px;
+            color: white;
+        }
+        
+        header nav>div>a {
+            display: table-cell;
+            cursor: pointer;
+            padding: 6px 10px;
+            font-size: 14px;
+            height: 34px;
+            vertical-align: middle;
+            color: white;
+        }
+        
+        header nav>div small {
+            display: block;
+        }
+        
+        header nav>div>a.close-report {
+            border-radius: 5px;
+            color: #6f0801;
+            background-color: white;
+        }
+        
+        div.container {}
+        
+        div.container>div {}
+        
+        table {
+            border-collapse: collapse;
+            margin: 2em auto;
+            text-align: left;
+            width: 100%;
+            max-width: 1080px;
+        }
+        
+        table th,
+        td {
+            border: 1px solid rgba(0, 0, 0, 0.4);
+            padding: 5px 10px;
+        }
+        
+        .title-a {
+            font-size: 3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        
+        .title-b {
+            font-size: 1rem;
+            color: red;
+        }
+        
+        .button-a {
+            background-color: #6f0801;
+            color: #fff;
+            border-color: #cde1f8;
+        }
+        
+        .button-rouded {
+            border-radius: 5rem;
+        }
+        
+        .button-big {
+            padding: .3rem 1.5rem;
+            font-size: 1.2rem;
+        }
+        
+        .title-c {
+            font-size: 2rem;
+            color: #6f0801;
+        }
+        
+        table thead,
+        tfoot {
+            background-color: #fec9b9;
+        }
+        
+        .title-box-2 {
+            margin-bottom: 3rem;
+        }
+        
+        .box-shadow-full {
+            padding: 3rem 1.25rem;
+            position: relative;
+            background-color: #fff;
+            margin-bottom: 3rem;
+            z-index: 2;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+        }
+        
+        table th {
+            font-weight: 500;
+        }
+        
+        table a {
+            color: blue;
+        }
+        
+        table tfoot {}
+    </style>
+</head>
+
+<body>
+    <div>
+
+        <div class="container">
+            <header class="user-header">
+                <div>
+                    <div class="doctor-info">DigiDoc</div>
+                    <a class="doctor-logout" href="/">Logout</a>
+                </div>
+            </header>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="title-box text-center">
+                        <h3 class="title-a">
+                            SCAN SUCCESSFUL
+                        </h3>
+                        <h2 class=" title-b">
+                            The ID is: 66555
+                        </h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="box-shadow-full">
+                            <div class="row">
+                                <div class="col-md-6">
+
+
+                                    <form style="align-self: center;padding-left: 620px;padding-top: 30px;">
+                                        <h1 class="title-c">Enter OTP:</h1>
+                                        <input type="number">
+                                        <button type="submit" class="button button-a button-big button-rouded">Submit</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+</body>
+
+</html>

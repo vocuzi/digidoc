@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+
+		<style type="text/css">
+			header.user-header{background-color: white; color: black;}
+			header.user-header > div {max-width: 1080px; margin: 0 auto;}
+			header.user-header > div > * {display: inline-block;}
+			header.user-header a {float: right; color: black; font-size: 14px;}
+			header .doctor-info {font-weight: bold;}
+
+
+			body {margin: 0; font-family: 'Open Sans'; overflow-x: hidden;}
+			.is-success {background-color: green; color: black;}
+			.is-warning {background-color: #d7d7d7; color: black;}
+			.is-danger {background-color: red; color: black;}
+
+			header {display: block; background-color: #6f0801;}
+			header > div {display: table; width: 100%;}
+			header > div > * {display: table-cell; vertical-align: middle; padding: 10px;}
+			header > div > nav {float: right;}
+			header > div > nav > div {height: 56px; display: table;}
+			div.patient-info {}
+			div.patient-info > * {margin: 2px;}
+			div.patient-info h3 {font-size: 20px; color: white; letter-spacing: -.9px;}
+			div.patient-info h2 {font-weight: normal; font-size: 14px; color: white;}
+			header nav > div > a {display: table-cell; cursor: pointer; padding: 6px 10px; font-size: 14px; height: 34px; vertical-align: middle; color: white;}
+			header nav > div small {display: block;}
+			header nav > div > a.close-report {border-radius: 5px; color: #6f0801;  background-color: white; }
+			div.masthead {padding: 30px 20px; color: white; background-color: #995352;}
+			div.masthead > * {display: block; margin: 0; padding: 5px}
+			div.masthead p span {display: inline-block; margin: 0px 10px; font-weight: bold;}
+			div.container {}
+			div.container > div {}
+			table {border-collapse: collapse; margin: 2em auto; text-align: left; width: 100%; max-width: 1080px;}
+			table th,td {border: 1px solid rgba(0,0,0,0.4); padding: 5px 10px;}
+			table thead, tfoot {background-color: #fec9b9;}
+			table th {font-weight: 500;}
+			table a {color: blue;}
+			table tfoot {}
+
+			div.level {width: 100%; display: block; max-width: 1080px; margin: 0 auto;}
+			div.level > * {display: inline-block; padding: 20px;}
+			div.level-left {width: calc(65% - 42px); text-align: justify;}
+			div.level-right {vertical-align: top; border-left: 1px solid grey; width: calc(35% - 42px);}
+			div.attachments {display: block;}
+			div.attachment {height: 30px; width: 30px; padding: 5px; background-color: purple; color: white; margin: 1px; display: inline-block; border-radius: 2px; cursor: pointer;}
+		</style>
+	</head>
+	<body>
+		<div>
+			<header class="user-header">
+				<div>
+					<div class="doctor-info">DigiDoc</div>
+					<a class="doctor-logout" href="/">Logout</a>
+				</div>
+			</header>
+			<header>
+				<div>
+					<div class="patient-info">
+						<h2>Medical History for</h2>
+						<h3>Pawan Kumar Mishra</h3>
+					</div>
+					<nav>
+						<div>
+							<a class="datetime">
+								<small>Today</small>
+								Sat 19 Oct 2019
+							</a>&nbsp;
+							<a href="" class="close-report">
+								Close Report
+							</a>
+						</div>
+					</nav>
+				</div>
+				<div class="masthead">
+					<h1>THL Report Diabetes Diagnosis</h1>
+					<p><span>Date : 12 Sept 2019</span>|<span>Doctor : Rajiv Shukla</span></p>
+					<p>Hospital : THL Hospital</p>
+				</div>
+			</header>
+			<div class="container">
+				<div>
+					<div class="level">
+						<div class="level-left">
+							<div>
+								<h3>Report Details</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam gravida dui in congue. Ut sed sem diam. Aenean sed quam sem. Sed lacus orci, interdum eget massa sed, imperdiet luctus nunc. Vestibulum lectus purus, tincidunt at augue in, pharetra ullamcorper est. Phasellus eget bibendum purus. Etiam eleifend odio ac pulvinar sollicitudin. Vivamus efficitur ipsum sed odio posuere, varius accumsan arcu hendrerit. Fusce molestie, neque sit amet aliquet congue, orci dolor ornare urna, ut blandit lacus nisl ac velit. Aenean ullamcorper vitae arcu id ultricies. Phasellus dolor urna, dictum non pharetra in, gravida ut velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse eleifend interdum dui, nec venenatis lectus tempus sit amet. Donec nec vehicula est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p><p>Nulla sollicitudin, sem sit amet sagittis facilisis, ipsum nisi dignissim magna, quis aliquam purus arcu et mi. Morbi aliquet dui nec sem aliquam convallis. Phasellus porttitor convallis tempus. Etiam sit amet imperdiet ante, semper tincidunt elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor justo mattis feugiat blandit. Mauris mattis aliquet lectus vitae iaculis. Donec ullamcorper fermentum elit ac porta. Duis laoreet facilisis odio vitae condimentum. Praesent ornare lacus eget ligula volutpat, eget pulvinar leo suscipit. Vivamus tincidunt tempor magna, vehicula sagittis enim ultricies eu. Sed mollis viverra rutrum. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla scelerisque mi vitae malesuada condimentum.</p><p>Quisque blandit felis non nulla dictum, sed accumsan nunc eleifend. Integer porttitor viverra nunc, et ultricies augue fermentum eget. Proin tincidunt gravida tincidunt. Praesent at risus purus. Sed id elementum enim. Donec in odio vel erat porttitor posuere eu laoreet nisi. Morbi suscipit sed nisi non ultrices. Pellentesque ultricies sed tellus non tristique. Donec non arcu tellus. Proin porttitor turpis vitae scelerisque mollis. Integer bibendum justo fringilla, semper leo sit amet, dignissim nunc.</p><p>Quisque magna massa, rhoncus non orci vel, consequat maximus libero. Pellentesque eget aliquam ex. Morbi porttitor ipsum lobortis, consequat felis vel, porttitor tellus. In varius est in est consequat, pulvinar auctor risus maximus. Integer nec libero at sapien rhoncus condimentum quis vitae turpis. Vestibulum pulvinar orci eros, at euismod justo sollicitudin eget. Cras non finibus orci.</p><p>Sed commodo semper laoreet. Nulla dapibus sapien vestibulum, rutrum nisi et, pharetra metus. Nulla euismod ligula justo. Ut rutrum gravida ullamcorper. Donec hendrerit egestas aliquet. Curabitur eleifend ante et velit tristique, ut porta lectus rhoncus. Duis quis aliquet risus. Ut sodales purus urna, pharetra iaculis nisl posuere id. Ut varius fermentum nisi in lobortis. Aliquam pellentesque ligula a mollis ultricies. Fusce elementum purus in viverra pretium. Sed vitae nulla pulvinar, malesuada justo eget, imperdiet velit. Nulla magna dui, varius bibendum euismod volutpat, ornare et ipsum. Nam mattis euismod lorem, quis sodales metus ultricies ac. Nulla porttitor sapien id efficitur pellentesque.</p>
+							</div>
+						</div><div class="level-right">
+							<div>
+								<h3>Attachment (90)</h3>
+								<div class="attachments"><div class="attachment">JPG</div><div class="attachment">JPG</div><div class="attachment">JPG</div><div class="attachment">PDF</div><div class="attachment">PDF</div><div class="attachment">PNG</div><div class="attachment">PNG</div><div class="attachment">JPG</div><div class="attachment">PDF</div><div class="attachment">PDF</div><div class="attachment">PNG</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

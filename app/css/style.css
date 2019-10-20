@@ -1,0 +1,184 @@
+body {
+ 
+  font-family: "Open Sans";
+  background-color: #D9CCFF;
+  margin: 0 auto;
+}
+ 
+.login {
+  overflow: hidden;
+  background-color: red;
+  padding: 40px 30px 30px 30px;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%);
+  transition: transform 300ms, box-shadow 300ms;
+  box-shadow: 5px 10px 10px rgba(2, 128, 144, 0.2);
+}
+ 
+.login > input {
+  font-family: "Open Sans";
+  display: block;
+  border-radius: 5px;
+  font-size: 16px;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 10px 10px;
+  margin: 15px -10px;
+}
+.login > button {
+  font-family:  "Open Sans";
+  cursor: pointer;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80px;
+  border: 0;
+  padding: 10px 0;
+  margin-top: 10px;
+  margin-left: -5px;
+  border-radius: 5px;
+  background-color: red;
+  transition: background-color 300ms;
+}
+.login > button:hover {
+  background-color: #FB2326;
+}
+.login::before, .login::after {
+  content: '';
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 40%;
+  z-index: -1;
+}
+.login::before {
+  left: 40%;
+  bottom: -130%;
+  background-color: rgba(69, 105, 144, 0.15);
+  animation: wawes 6s infinite linear;
+}
+.login::after {
+  left: 35%;
+  bottom: -125%;
+  background-color: rgba(2, 128, 144, 0.2);
+  animation: wawes 7s infinite;
+}
+@keyframes wawes {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+header.user-header{background-color: white; color: black;}
+      header.user-header > div {max-width: 1080px; margin: 0 auto;}
+      header.user-header > div > * {display: inline-block;}
+      header.user-header a {float: right; color: black; font-size: 24px;}
+      header .doctor-info {font-weight: bold; font-size: 24px;}
+header {display: block; background-color: #6f0801;}
+      header > div {display: table; width: 100%;}
+      header > div > * {display: table-cell; vertical-align: middle; padding: 10px;}
+      header > div > nav {float: right;}
+      header > div > nav > div {height: 56px; display: table;}
+      header nav > div > a {display: table-cell; cursor: pointer; padding: 6px 10px; font-size: 14px; height: 34px; vertical-align: middle; color: white;}
+      header nav > div small {display: block;}
+      header nav > div > a.close-report {border-radius: 5px; color: #6f0801;  background-color: white; }
+
+
+      .card {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  margin: 1px;
+  margin-bottom: 50px;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+
+}
+
+.card:hover {
+  /*box-shadow: 0 5px 22px 0 rgba(0,0,0,.25);*/
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-bottom: 54px;
+}
+.card-scan {
+  display: inline-block;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.15);
+  margin: 1px;
+  margin-bottom: 50px;  
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: white;
+
+}
+.image {
+  height: 200px;
+  opacity: .7;
+  overflow: hidden;
+  transition: all .2s ease-in-out;
+}
+
+.image:hover,
+.card:hover .image {
+  height: 200px;
+  opacity: 1;
+}
+
+.text {
+  background: #FFF;
+  padding: 20px;
+  min-height: 200px;
+}
+
+.text p {
+  margin-bottom: 0px;
+}
+
+.fab {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: -50px;
+  right: 20px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, .3);
+  color: #fff;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  background: #0066A2;
+  -webkit-transition: -webkit-transform .2s ease-in-out;
+  transition: transform .2s ease-in-out;
+}
+
+.fab:hover {
+  background: #549D3C;
+  cursor: pointer;
+  -ms-transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+button{ 
+   
+  text-decoration: none; 
+  color: inherit; transition: all .3s; line-height: 1;
+  background-color: #D9CCFF;
+  border-radius: 5px; 
+  font-size: 30px;
+  outline: 0; border: 0; background: none; cursor: pointer;
+  }
+  img{
+    height: 100px;
+  }

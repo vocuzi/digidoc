@@ -1,0 +1,14 @@
+{
+  "name": "digidoc",
+  "version": "0.1.0",
+  "description": "its first attempt",
+  "main": "./app/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.12"
+  }
+}
